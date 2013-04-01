@@ -1,11 +1,22 @@
-table {
-	color: blue;
-}
-
-a {
-	color: purple;
-}
-
 body {
 	background-color: gray;
+}
+
+#mainNavBar {
+	background-color: black;
+}
+
+#mainNavBar a {
+	color: #99CC66;
+	font-family: Arial, Verdana, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#mainNavBar a:hover {
+	color: #33FF00;
+}
+
+#mainNavBar a:active {
+	color: #FFFFFF;
 }
