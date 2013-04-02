@@ -1,22 +1,58 @@
 body {
-	background-color: gray;
+	background-color: white;
+	margin: 10px auto 10px auto;							/* attempt to center everything on page */
 }
 
 #mainNavBar {
 	background-color: black;
+	height: 30px;
+	width: 600px;
+	opacity: 0.65;
+	margin: 10px auto 10px auto;							/* center the nav bar horizontally: top, right, bottom, left */ 
+	padding-top: 11px;										/* center the links vertically in the nav bar */
+	text-align: center;										/* center the text horizontally */
+	box-shadow: 0px 0px 10px #000000;						/* display a shadow for the box */
+	border-radius: 3px;										/* round the corners of box by 3px */
 }
 
 #mainNavBar a {
-	color: #99CC66;
+	color: #CCCCCC;
+	font-family: Arial, Verdana, sans-serif;				
+	text-decoration: none;									/* don't display underline on links */
+}
+
+#mainNavBar a:hover, #mainNavBar a.on{						/* how to show link if you hover or if you are on page */
+	color: #99FF66;
+}
+
+#mainNavBar li {
+	display: inline;										/* display the different list items in a row for the navigation bar */
+	margin-right: 40px;										/* space the different list items 40px apart */
+}
+
+#banner {
+	height: 30px;
+	text-align: center;										/* align the banner in the center */
+	opacity: 0.65;
 	font-family: Arial, Verdana, sans-serif;
+	text-shadow: 2px 2px 2px #000000;						
+	font-weight: lighter;									/* make the normal banner text skinnier */
+}
+
+#banner p {													/* control the word "adam" wrapped in p tags in the banner */
+	display: inline;										/* don't line break since p is block element*/
+	color: #99FF66;
 	font-weight: bold;
-	text-decoration: none;
 }
 
-#mainNavBar a:hover {
-	color: #33FF00;
+#homeImage{
+	width: 640px;
+	height: 480px;
+	box-shadow: 1px 0px 10px #000000;
+	margin: 10px auto 10px auto;
 }
 
-#mainNavBar a:active {
-	color: #FFFFFF;
+footer {
+	text-align: center;
+	opacity: 0.65;
 }
