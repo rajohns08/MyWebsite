@@ -1,6 +1,10 @@
+/************************************/
+/* css for main outline of the site */
+/************************************/
 body {
 	background-color: white;
-	margin: 10px auto 10px auto;							/* attempt to center everything on page */
+	width: 640px;											/* must specify width for margin centering to work */
+	margin: 10px auto 10px auto;							/* center everything on page */
 }
 
 #mainNavBar {
@@ -8,7 +12,6 @@ body {
 	height: 30px;
 	width: 600px;
 	opacity: 0.65;
-	margin: 10px auto 10px auto;							/* center the nav bar horizontally: top, right, bottom, left */ 
 	padding-top: 11px;										/* center the links vertically in the nav bar */
 	text-align: center;										/* center the text horizontally */
 	box-shadow: 0px 0px 10px #000000;						/* display a shadow for the box */
@@ -45,14 +48,42 @@ body {
 	font-weight: bold;
 }
 
-#homeImage{
-	width: 640px;
-	height: 480px;
-	box-shadow: 1px 0px 10px #000000;
-	margin: 10px auto 10px auto;
-}
-
-footer {
+footer {													/* copyright 2013 robertadamjohns */
 	text-align: center;
 	opacity: 0.65;
 }
+/***************************************/
+/* end of css for main outline of site */
+/***************************************/
+
+
+
+
+
+/****************************/
+/* css specific to home page*/
+/****************************/
+#homeImage{
+	width: 640px;											/* specify width and height of box to be exactly size of picture, so we can put shadow around picture */
+	height: 480px;
+	box-shadow: 0px 0px 10px #000000;
+}
+/***********************************/
+/* end of css specific to home page*/
+/***********************************/
+
+
+
+
+
+/******************************/
+/* css specific to about page */
+/******************************/
+#aboutImage {
+	text-align: left;
+	float: left;
+	margin-right: 10px;
+}
+/*************************************/
+/* end of css specific to about page */
+/*************************************/
