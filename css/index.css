@@ -7,10 +7,6 @@ body {
 	margin: 10px auto 10px auto;							/* center everything on page */
 }
 
-p {
-	text-indent: 20px;
-}
-
 p.rootParagraph:first-letter {
 	font-size: 200%;
 	color: #99FF66;
@@ -98,6 +94,50 @@ footer {													/* copyright 2013 robertadamjohns */
 	height: 144px;
 	box-shadow: 0px 0px 10px #000000;
 }
+
+.about p {
+	text-indent: 20px;
+}
 /*************************************/
 /* end of css specific to about page */
 /*************************************/
+
+
+
+
+
+/*********************************/
+/* css specific to projects page */
+/*********************************/
+.projects h1 {
+	opacity: 0.65;
+	font-family: Arial, Verdana, sans-serif;
+	text-shadow: 2px 2px 2px #000000;						
+	font-weight: lighter;
+}
+
+.projects h1 p {
+	display: inline;										/* don't line break since p is block element*/
+	color: #99FF66;
+	font-weight: bold;
+}
+
+.projects a {
+	text-decoration: none;
+}
+
+.projects a:hover {
+	text-decoration: underline;
+}
+
+.projects ul {
+	padding: 0;
+}
+
+.projects li {
+	display: inline;
+	margin-right: 20px;
+}
+/****************************************/
+/* end of css specific to projects page */
+/****************************************/
