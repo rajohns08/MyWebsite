@@ -1,10 +1,19 @@
 /************************************/
 /* css for main outline of the site */
 /************************************/
+html {
+	overflow-y: scroll;
+}
+
 body {
 	background-color: white;
 	width: 640px;											/* must specify width for margin centering to work */
 	margin: 10px auto 10px auto;							/* center everything on page */
+}
+
+p.rootParagraph {
+	overflow: auto;
+	width: 100%;
 }
 
 p.rootParagraph:first-letter {
@@ -58,6 +67,7 @@ p.rootParagraph:first-letter {
 footer {													/* copyright 2013 robertadamjohns */
 	text-align: center;
 	opacity: 0.65;
+	margin-top: 50px;
 }
 /***************************************/
 /* end of css for main outline of site */
@@ -87,7 +97,6 @@ footer {													/* copyright 2013 robertadamjohns */
 /* css specific to about page */
 /******************************/
 #aboutImage {
-	text-align: left;
 	float: left;
 	margin-right: 10px;
 	width: 149px;
@@ -114,6 +123,7 @@ footer {													/* copyright 2013 robertadamjohns */
 	font-family: Arial, Verdana, sans-serif;
 	text-shadow: 2px 2px 2px #000000;						
 	font-weight: lighter;
+	height: 15px;
 }
 
 .projectHeaders p {
@@ -122,22 +132,34 @@ footer {													/* copyright 2013 robertadamjohns */
 	font-weight: bold;
 }
 
-ul.projectLinks {
+.projectLinks {
 	padding: 0;
 }
 
-.projects a {
+.projectLinks a {
 	text-decoration: none;
 	color: #000000;
 }
 
-.projects a:hover {
+.projectLinks a:hover {
 	text-decoration: underline;
 }
 
-.projects li {
+.projectLinks li {
 	display: inline;
-	margin-right: 20px;
+}
+
+#rapidImage {
+	float: left;
+	margin-right: 10px;
+/*	width: 149px;
+	height: 144px;
+	box-shadow: 0px 0px 10px #000000;*/
+}
+
+#reminderImage {
+	float: left;
+	margin-right: 10px;
 }
 /****************************************/
 /* end of css specific to projects page */
