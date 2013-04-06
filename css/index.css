@@ -1,8 +1,8 @@
-/************************************/
-/* css for main outline of the site */
-/************************************/
+/***************************************************************************************/
+/* css for main outline of the site and other css rules that should apply to all pages */
+/***************************************************************************************/
 html {
-	overflow-y: scroll;
+	overflow-y: scroll;										/* so that there is always a scroll bar even if page not long enough for scrolling. useful so that nav bar is alway in exact same spot */
 }
 
 body {
@@ -12,12 +12,12 @@ body {
 }
 
 p.rootParagraph {
-	overflow: auto;
+	overflow: auto;											/* overflow and width at 100% are needed if the containing element of a float element only has float elements. it causes each float element to be on separate lines */
 	width: 100%;
 }
 
 p.rootParagraph:first-letter {
-	font-size: 200%;
+	font-size: 200%;										/* any time we have a paragraph in the rootParagraph class, let's make the first letter unique */
 	color: #99FF66;
 	opacity: 0.65;
 	text-shadow: 2px 2px 2px #000000;
@@ -67,7 +67,7 @@ p.rootParagraph:first-letter {
 footer {													/* copyright 2013 robertadamjohns */
 	text-align: center;
 	opacity: 0.65;
-	margin-top: 50px;
+	margin-top: 50px;										/* move the footer down 50px from bottom of page */
 }
 /***************************************/
 /* end of css for main outline of site */
@@ -97,15 +97,15 @@ footer {													/* copyright 2013 robertadamjohns */
 /* css specific to about page */
 /******************************/
 #aboutImage {
-	float: left;
-	margin-right: 10px;
-	width: 149px;
+	float: left;											/* float left so text will be on right of image starting at top of image */
+	margin-right: 10px;										/* separate text from image 10px horizontally */
+	width: 149px;											/* add width and height to be exactly size of picture so we can put shadow around picture */
 	height: 144px;
 	box-shadow: 0px 0px 10px #000000;
 }
 
 .about p {
-	text-indent: 20px;
+	text-indent: 20px;										/* indent all paragraphs on the about page */
 }
 /*************************************/
 /* end of css specific to about page */
@@ -118,48 +118,48 @@ footer {													/* copyright 2013 robertadamjohns */
 /*********************************/
 /* css specific to projects page */
 /*********************************/
-.projectHeaders {
+.projectHeaders {											/* specify how to show each title of projects */
 	opacity: 0.65;
 	font-family: Arial, Verdana, sans-serif;
 	text-shadow: 2px 2px 2px #000000;						
 	font-weight: lighter;
-	height: 15px;
+	height: 15px;											/* height is used to move github and download links closer to project title */
 }
 
-.projectHeaders p {
+.projectHeaders p {											/* how to display the second word of project title that is wrapped in p tags */
 	display: inline;										/* don't line break since p is block element*/
 	color: #99FF66;
 	font-weight: bold;
 }
 
 .projectLinks {
-	padding: 0;
+	padding: 0;												/* don't indent the unordered list of links for github and download of each project */
 }
 
 .projectLinks a {
-	text-decoration: none;
+	text-decoration: none;									/* remove underline and make github and download links black */
 	color: #000000;
 }
 
-.projectLinks a:hover {
+.projectLinks a:hover {										/* if you hover over a link make it underlined */
 	text-decoration: underline;
 }
 
 .projectLinks li {
-	display: inline;
+	display: inline;										/* show the links side by side instead of on top of each other like a normal list element */
 }
 
 #rapidImage {
-	float: left;
-	margin-right: 10px;
+	float: left;											/* float left so that text on the right will start at top of image */
+	margin-right: 10px;										/* make the text 10px away from image horizontally */
 /*	width: 149px;
 	height: 144px;
 	box-shadow: 0px 0px 10px #000000;*/
 }
 
 #reminderImage {
-	float: left;
-	margin-right: 10px;
+	float: left;											/* float left so that text on the right will start at top of image */
+	margin-right: 10px;										/* make the text 10px away from image horizontally */
 }
 /****************************************/
 /* end of css specific to projects page */
