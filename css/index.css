@@ -98,7 +98,7 @@ footer {													/* copyright 2013 robertadamjohns */
 /******************************/
 #aboutImage {
 	float: left;											/* float left so text will be on right of image starting at top of image */
-	margin-right: 10px;										/* separate text from image 10px horizontally */
+	margin: 2px 10px 2px 2px;								/* separate text from image 10px horizontally. also add 2px margin on other sides so that shadow will show */
 	width: 149px;											/* add width and height to be exactly size of picture so we can put shadow around picture */
 	height: 144px;
 	box-shadow: 0px 0px 10px #000000;
@@ -151,15 +151,19 @@ footer {													/* copyright 2013 robertadamjohns */
 
 #rapidImage {
 	float: left;											/* float left so that text on the right will start at top of image */
-	margin-right: 10px;										/* make the text 10px away from image horizontally */
-/*	width: 149px;
-	height: 144px;
-	box-shadow: 0px 0px 10px #000000;*/
+	margin: 2px 10px 2px 2px;								/* separate text from image 10px horizontally. also add 2px margin on other sides so that shadow will show */
+	width: 202px;
+	height: 303px;
+	box-shadow: 0px 0px 10px #000000;
 }
 
 #reminderImage {
 	float: left;											/* float left so that text on the right will start at top of image */
-	margin-right: 10px;										/* make the text 10px away from image horizontally */
+	margin: 2px 10px 2px 2px;								/* separate text from image 10px horizontally. also add 2px margin on other sides so that shadow will show */
+	width: 308px;
+	height: 303px;
+	box-shadow: 0px 0px 10px #000000;
+
 }
 /****************************************/
 /* end of css specific to projects page */
