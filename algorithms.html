@@ -67,16 +67,25 @@
 		<ul class="bodyHeaderLinks">
 			<li><a href="">my c++ implementation</a></li>
 		</ul>
+		<p class="rootParagraph">
+			A binary tree is a non-sequential data structure in which every node in the structure has at most 2 children. The structure is non-sequential because the nodes are not linked together in a linear chain as in a linked list. Every node except for the root node has exactly one predecessor or parent. A binary tree can be useful for searching large sets of data, because of the way the child nodes are arranged. The child nodes are arranged in a manner where the left child of a node has a lesser value than the parent node, and the right child has a greater value. A node that has no children is called a leaf node, and it is the deepest node for a given branch. When a node is inserted into a binary tree, it is always inserted as a leaf node, thus the shape of the tree is dependent upon the order of insertion. Traversing a binary tree is typically accomplished using Preorder, Inorder, or Postorder traversals as explained under depth first search.
+		</p>
 		<hr>
 		<h1 class="bodyHeaders">trie</h1>
 		<ul class="bodyHeaderLinks">
 			<li><a href="">my c++ implementation</a></li>
 		</ul>
+		<p class="rootParagraph">
+			A trie is a data structure that represents sets of character strings. Each node in the structure typically contains 26 pointers (one for each letter of the alphabet). The structure is usually organized in a tree type data structure. The time complexity for searching whether or not a word exists in the structure is O(n) (proportional to the length of the word). Space complexity of the structure is proportional to the number of characters in the entire document in the worst case. For example, if you have a trie with 10 words, each starting with a different letter, then there will be an individual node for each character in the data. One common application of a trie is word matching, since the trie data structure has such good time complexity for searching for a word. When storing a word to a trie from an input file, you should also keep track of where each word occurs, in case it occurs more than once. The space complexity problem of a trie can be solved by compressing nodes with only one child node. Nodes with only one child node can be combined into the parent node to save space. Another common application of the trie data structure is for routers in router lookup tables for finding the best possible match to where to send out a packet given an IP address. 
+		</p>
 		<hr>
 		<h1 class="bodyHeaders">singleton<p>design</p>pattern</h1>
 		<ul class="bodyHeaderLinks">
-			<li><a href="">my c++ implementation</a></li>
+			<li><a href="">my java implementation</a></li>
 		</ul>
+		<p class="rootParagraph">
+			The singleton design pattern is a design pattern that is used in an environment in which the programmer only wants to allow a single instantiation of an object for a given class. This pattern is usually accomplished through making a private constructor, and providing a getInstance method for the class. The private constructor will prevent an object from being instantiated in the traditional sense, and the getInstance method will handle the control of handing out objects. The getInstance method will only return a new object if one has not already been created (in a lazy instantiation). A lazy instantiation is one that only creates an object when one is asked for. This method is good for preserving space if needed, but it can introduce some problems also. For example, if 2 threads enter the getInstance method at the same time, then there will be 2 separate objects returned. To prevent this thread synchronization problem, you can swap to an eager instantiation and automatically instantiate an object, or you can make the getInstance method synchronized in Java, so that only one thread can enter it at a time. There are also other methods of solving the thread synchronization problem, but the 2 previously mentioned are the simplest from a coding perspective. 
+		</p>
 		<hr>
 	</body>
 	<footer>
