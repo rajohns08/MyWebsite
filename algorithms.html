@@ -16,25 +16,61 @@
 			<li><a href="contact.html">contact</a></li>
 		</ul>
 		<h1 class="bodyHeaders">binary<p>search</p></h1>
+		<ul class="bodyHeaderLinks">
+			<li><a href="">my c++ implementation</a></li>
+		</ul>
 		<p class="rootParagraph">
 			Binary search is a search algorithm for searching for a value in an array type structure of data. This search algorithm requires that the list of data already be in a sorted order, because that is the key behind the time complexity of the algorithm. The algorithm uses the size of the list, and the list itself to start searching the list for the given value. The algorithm first checks the middle element of the list to see if it is the value. If the middle element is greater than the element you are searching for, you know that the element you are searching for must be in the first half of the list. Thus you can discard the latter half of the list. This method of searching a list allows you to discard half of the remaining list every time you check for the value. This halving of the list after every search results in a O(logn) running time complexity, which is great for value searching algorithms.
 		</p>
 		<hr>
 		<h1 class="bodyHeaders">breadth<p>first</p>search</h1>
+		<ul class="bodyHeaderLinks">
+			<li><a href="">my c++ implementation</a></li>
+		</ul>
+		<p class="rootParagraph">
+			Breadth First Search is an algorithm for searching a graph or a tree type data structure. If you imagine that the root node of the graph is depth k, then the nodes at depth k+1 would be every node that is directly attached to the root node. Likewise, the nodes at depth k+2 would be every node directly attached to a node at depth k+1 and so on. The algorithm searches the tree or graph in "level" order. Level order means that the algorithm will explore every node at depth k+1, before it moves to depth k+2. The algorithm uses a queue data structure to push on nodes to visit, and pop them off in a FIFO manner to retain the level ordering.
+		</p>
 		<hr>
 		<h1 class="bodyHeaders">depth<p>first</p>search</h1>
+		<ul class="bodyHeaderLinks">
+			<li><a href="">my c++ implementation</a></li>
+		</ul>
+		<p class="rootParagraph">
+			Depth First Search is an algorithm for searching a tree or graph type data structure. The algorithm searches the tree or graph all the way down to the deepest level node before returning to the top depth, to search down the next branch. Depth First Search uses a stack data structure as opposed to the queue data structure of breadth first search. The stack data structure is used to preserve depth searching by operating in a LIFO fashion. When a child node is pushed onto the stack, the function can be called again recursively with the top of the stack to ensure depth first searching. Depth first searching has 3 popular styles for binary trees: preorder, inorder, and postorder. Preorder processes a node as soon as it comes to the node, and then recursively searches left and right children. Inorder processes a node if there are no more left children of the node, then will check for right children. Postorder processes a node only after there are no left or right children.
+		</p>
 		<hr>
 		<h1 class="bodyHeaders">merge<p>sort</p></h1>
+		<ul class="bodyHeaderLinks">
+			<li><a href="">my c++ implementation</a></li>
+		</ul>
+		<p class="rootParagraph">
+			Merge sort is an algorithm for sorting an array type data structure. This algorithm works by breaking up an array/list (usually recursively), into a left half and a right half. The algorithm repeats this fragmentation until there is only 1 item remaining in n separate lists (where n is the number of elements in the original array). Once there is only one item remaining in each list, it is already sorted, so you merge each item with a paired item in the first merge step. The merging step consists of moving each element of the left and right halves into a new array in sorted order. Once the first merge step completes, you have multiple lists of 2 items. You then merge lists of 2 together, then 4 and so on until you have merged all the elements back into a single sorted list. Merge sort has O(nlogn) running time. Merge sort is often compared to quick sort, and one advantage merge sort has is that its worst case time complexity is O(nlogn), whereas worst case time complexity of quick sort is O(n<sup>2</sup>).
+		</p>
 		<hr>
 		<h1 class="bodyHeaders">stack</h1>
+		<ul class="bodyHeaderLinks">
+			<li><a href="">my c++ implementation</a></li>
+		</ul>
 		<hr>
 		<h1 class="bodyHeaders">linked<p>list</p></h1>
+		<ul class="bodyHeaderLinks">
+			<li><a href="">my c++ implementation</a></li>
+		</ul>
 		<hr>
 		<h1 class="bodyHeaders">binary<p>tree</p></h1>
+		<ul class="bodyHeaderLinks">
+			<li><a href="">my c++ implementation</a></li>
+		</ul>
 		<hr>
 		<h1 class="bodyHeaders">trie</h1>
+		<ul class="bodyHeaderLinks">
+			<li><a href="">my c++ implementation</a></li>
+		</ul>
 		<hr>
 		<h1 class="bodyHeaders">singleton<p>design</p>pattern</h1>
+		<ul class="bodyHeaderLinks">
+			<li><a href="">my c++ implementation</a></li>
+		</ul>
 		<hr>
 	</body>
 	<footer>
