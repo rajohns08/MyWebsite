@@ -6,9 +6,13 @@ html {
 }
 
 body {
-	background-color: white;
+	background-color: #CCCCCC;
 	width: 640px;											/* must specify width for margin centering to work */
 	margin: 10px auto 10px auto;							/* center everything on page */
+}
+
+.about {
+	background-color: #FFFFFF;
 }
 
 .bodyHeaders {												/* specify how to show each title of projects */
@@ -73,6 +77,10 @@ p.rootParagraph:first-letter {
 
 #mainNavBar a:hover, #mainNavBar a.on{						/* how to show link if you hover or if you are on page */
 	color: #99FF66;
+}
+
+#mainNavBar a:active {
+	color: #CCCCCC;											/* make the link grey when the user actually clicks it to provide feedback to the user */
 }
 
 #mainNavBar li {
