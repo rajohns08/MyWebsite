@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	background-color: #66cccc;								/* fallback color if gradients don't load */
+	background-color: #FFFFFF;								/* fallback color if gradients don't load */
 	
 	/* safari 5.1, chrome 10+ */
 	background-image: -webkit-linear-gradient(#FFFFFF,#E3E3E3);
@@ -196,3 +196,33 @@ footer {													/* copyright 2013 robertadamjohns */
 /****************************************/
 /* end of css specific to projects page */
 /****************************************/
+
+
+
+
+
+/**************************************/
+/* css specific page for contact page */
+/**************************************/
+a.socialMediaButton {
+	height: 48px;
+	width: 48px;
+	background-image: url("images/socialMediaSprite.png");
+	text-indent: -9999px;
+	display: inline-block;
+}
+
+a#facebookButton {
+	background-position: 0px 0px;
+}
+
+a#facebookButton:hover {
+	background-position: 0px -49px;
+}
+
+a#twitterButton {
+	background-position: -49px 0px;
+}
+/***************************************/
+/* end of css specific to contact page */
+/***************************************/
