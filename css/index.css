@@ -207,9 +207,10 @@ footer {													/* copyright 2013 robertadamjohns */
 a.socialMediaButton {
 	height: 48px;
 	width: 48px;
-	background-image: url("images/socialMediaSprite.png");
+	background-image: url("../images/socialMediaSprite.png");
 	text-indent: -9999px;
 	display: inline-block;
+	margin-right: 20px;
 }
 
 a#facebookButton {
@@ -222,6 +223,39 @@ a#facebookButton:hover {
 
 a#twitterButton {
 	background-position: -49px 0px;
+}
+
+a#twitterButton:hover {
+	background-position: -49px -49px;
+}
+
+a#emailButton {
+	background-position: -97px 0px;
+}
+
+a#emailButton:hover {
+	background-position: -97px -49px;
+}
+
+a#linkedinButton {
+	background-position: -145px 0px;
+}
+
+a#linkedinButton:hover {
+	background-position: -145px -49px;
+}
+
+a#googlePlusButton {
+	background-position: -193px 0px;
+}
+
+a#googlePlusButton:hover {
+	background-position: -193px -49px;
+}
+
+#contactButtons {
+	text-align: center;
+	margin-top: 50px;
 }
 /***************************************/
 /* end of css specific to contact page */
